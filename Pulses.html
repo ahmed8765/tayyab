@@ -1,0 +1,1319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Pulses</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/business-casual.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+/* entypo */
+[class*="entypo-"]:before {
+   font-family: "entypo", sans-serif;
+}
+#backToTop{
+    position: fixed;
+	bottom: 2rem;
+	right: 2rem;
+	cursor: pointer;
+	display: none;
+    color: #fff;
+    background: rgba(0,0,0,0.3);
+    border-radius: 0;
+}
+a { 
+   text-decoration: none;
+}
+#poo{
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+.container1 {
+   margin: 0 auto;
+   padding: 20px 50px;
+   background: white;
+}
+#sticky-social {
+   left: 0;
+   position: fixed;
+   top: 235px;
+}
+#sticky-social a {
+   background: #333;
+   color: #fff;
+   display: block;
+   height: 35px;
+   font: 16px "Open Sans", sans-serif;
+   line-height: 35px;
+   position: relative;
+   text-align: center;
+   width: 35px;
+}
+#sticky-social a span {
+   line-height: 35px;
+   left: -120px;
+   position: absolute;
+   text-align:center;
+   width:95px;
+}
+#sticky-social a:hover span {
+   left: 100%;
+}
+#sticky-social a[class*="facebook"],
+#sticky-social a[class*="facebook"]:hover,
+#sticky-social a[class*="facebook"] span { background: #3b5998; }
+
+#sticky-social a[class*="twitter"],
+#sticky-social a[class*="twitter"]:hover,
+#sticky-social a[class*="twitter"] span { background: #00aced; }
+
+#sticky-social a[class*="gplus"],
+#sticky-social a[class*="gplus"]:hover,
+#sticky-social a[class*="gplus"] span { background: #dd4b39; }  
+
+#sticky-social a[class*="linkedin"],
+#sticky-social a[class*="linkedin"]:hover,
+#sticky-social a[class*="linkedin"] span { background: #007bb6; }  
+
+#sticky-social a[class*="instagrem"],
+#sticky-social a[class*="instagrem"]:hover,
+#sticky-social a[class*="instagrem"] span { background: #517fa4; }  
+
+#sticky-social a[class*="stumbleupon"],
+#sticky-social a[class*="stumbleupon"]:hover,
+#sticky-social a[class*="stumbleupon"] span { background: #eb4924; }  
+
+#sticky-social a[class*="pinterest"],
+#sticky-social a[class*="pinterest"]:hover,
+#sticky-social a[class*="pinterest"] span { background: #cc2127; }  
+
+#sticky-social a[class*="flickr"],
+#sticky-social a[class*="flickr"]:hover,
+#sticky-social a[class*="flickr"] span { background: #ff0084; }  
+
+#sticky-social a[class*="tumblr"],
+#sticky-social a[class*="tumblr"]:hover,
+#sticky-social a[class*="tumblr"] span { background: #32506d; }
+a.animated-button.thar-three {
+	
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	position: relative;
+
+	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+0s;
+font-size:17px;
+color:#000
+}</style>
+    <style>#cssmenu {
+  background: #FFF;
+  margin: auto;
+  width: auto;
+  padding:;
+  line-height: 1;
+  display: block;
+  position: relative;
+  font-family: 'PT Sans', sans-serif;
+padding-left:25%;
+}
+#cssmenu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+#cssmenu ul:after,
+#cssmenu:after {
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+#cssmenu ul li {
+  margin: 0;
+  padding: 0;
+  display: block;
+  position: relative;
+}
+#cssmenu ul li a {
+  text-decoration: none;
+  display: block;
+  margin: 0;
+  -webkit-transition: color .2s ease;
+  -moz-transition: color .2s ease;
+  -ms-transition: color .2s ease;
+  -o-transition: color .2s ease;
+  transition: color .2s ease;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#cssmenu ul li ul {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+}
+#cssmenu ul li ul li {
+  max-height: 0;
+  position: absolute;
+  -webkit-transition: max-height 0.4s ease-out;
+  -moz-transition: max-height 0.4s ease-out;
+  -ms-transition: max-height 0.4s ease-out;
+  -o-transition: max-height 0.4s ease-out;
+  transition: max-height 0.4s ease-out;
+  background: ;
+}
+#cssmenu ul li ul li.has-sub:after {
+  display: block;
+  position: absolute;
+  content: "";
+  height: 10px;
+  width: 10px;
+  border-radius: 5px;
+  background: #000000;
+  z-index: 1;
+  top: 13px;
+  right: 15px;
+}
+#cssmenu.align-right ul li ul li.has-sub:after {
+  right: auto;
+  left: 15px;
+}
+#cssmenu ul li ul li.has-sub:before {
+  display: block;
+  position: absolute;
+  content: "";
+  height: 0;
+  width: 0;
+  border: 3px solid transparent;
+  border-left-color: ;
+  z-index: 2;
+  top: 15px;
+  right: 15px;
+}
+#cssmenu.align-right ul li ul li.has-sub:before {
+  right: auto;
+  left: 15px;
+  border-left-color: transparent;
+  border-right-color: ;
+}
+#cssmenu ul li ul li a {
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: none;
+  color: #000;
+  letter-spacing: 0;
+  display: block;
+  width: 170px;
+  padding: 11px 10px 11px 20px;
+}
+#cssmenu ul li ul li:hover > a,
+#cssmenu ul li ul li.active > a {
+  color: #F00;
+}
+#cssmenu ul li ul li:hover:after,
+#cssmenu ul li ul li.active:after {
+  background: #F00;
+}
+#cssmenu ul li ul li:hover > ul {
+  left: 100%;
+  top: 0;
+}
+#cssmenu ul li ul li:hover > ul > li {
+  max-height: 72px;
+  position: relative;
+}
+#cssmenu > ul > li {
+  float: left;
+}
+#cssmenu.align-center > ul > li {
+  float: none;
+  display: inline-block;
+}
+#cssmenu.align-center > ul {
+  text-align: center;
+}
+#cssmenu.align-center ul ul {
+  text-align: left;
+}
+#cssmenu.align-right > ul {
+  float: right;
+}
+#cssmenu.align-right > ul > li:hover > ul {
+  left: auto;
+  right: 0;
+}
+#cssmenu.align-right ul ul li:hover > ul {
+  right: 100%;
+  left: auto;
+}
+#cssmenu.align-right ul ul li a {
+  text-align: right;
+}
+#cssmenu > ul > li:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 0;
+  top: 0;
+  z-index: 0;
+  background: ;
+  -webkit-transition: height .2s;
+  -moz-transition: height .2s;
+  -ms-transition: height .2s;
+  -o-transition: height .2s;
+  transition: height .2s;
+}
+#cssmenu > ul > li.has-sub > a {
+  padding-right: 40px;
+}
+#cssmenu > ul > li.has-sub > a:after {
+  display: block;
+  content: "";
+  background:;
+  height: 12px;
+  width: 12px;
+  position: absolute;
+  border-radius: 13px;
+  right: 14px;
+  top: 16px;
+}
+#cssmenu > ul > li.has-sub > a:before {
+  display: block;
+  content: "";
+  border: 4px solid transparent;
+  border-top-color: ;
+  z-index: 2;
+  height: 0;
+  width: 0;
+  position: absolute;
+  right: 16px;
+  top: 21px;
+}
+#cssmenu > ul > li > a {
+  color: #000;
+  padding: ;
+  padding-top:;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 14px;
+  z-index: 2;
+  position: relative;
+}
+#cssmenu > ul > li:hover:after,
+#cssmenu > ul > li.active:after {
+  height: 100%;
+}
+#cssmenu > ul > li:hover > a,
+#cssmenu > ul > li.active > a {
+  color: #00000;
+}
+#cssmenu > ul > li:hover > a:after,
+#cssmenu > ul > li.active > a:after {
+  background: #000;
+}
+#cssmenu > ul > li:hover > a:before,
+#cssmenu > ul > li.active > a:before {
+  border-top-color: #000;
+}
+#cssmenu > ul > li:hover > ul {
+  left: 0;
+}
+#cssmenu > ul > li:hover > ul > li {
+  max-height: 72px;
+  position: relative;
+}
+#cssmenu #menu-button {
+  display: none;
+}
+#cssmenu > ul > li > a {
+  display: block;
+}
+#cssmenu > ul > li {
+  width: auto;
+}
+#cssmenu > ul > li > ul {
+  width: 170px;
+  display: block;
+}
+#cssmenu > ul > li > ul > li {
+  width: 170px;
+  display: block;
+}
+@media all and (max-width: 800px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
+  #cssmenu > ul {
+    max-height: 0;
+    overflow: hidden;
+    -webkit-transition: max-height 0.35s ease-out;
+    -moz-transition: max-height 0.35s ease-out;
+    -ms-transition: max-height 0.35s ease-out;
+    -o-transition: max-height 0.35s ease-out;
+    transition: max-height 0.35s ease-out;
+  }
+  #cssmenu > ul > li > ul {
+    width: 100%;
+    display: block;
+  }
+  #cssmenu.align-right ul li a {
+    text-align: left;
+  }
+  #cssmenu > ul > li > ul > li {
+    width: 100%;
+    display: block;
+  }
+  #cssmenu.align-right ul ul li a {
+    text-align: left;
+  }
+  #cssmenu > ul > li > ul > li > a {
+    width: 100%;
+    display: block;
+  }
+  #cssmenu ul li ul li a {
+    width: 100%;
+  }
+  #cssmenu.align-center > ul {
+    text-align: left;
+  }
+  #cssmenu.align-center > ul > li {
+    display: block;
+  }
+  #cssmenu > ul.open {
+    max-height: 1000px;
+    border-top: ;
+  }
+  #cssmenu ul {
+    width: 100%;
+  }
+  #cssmenu ul > li {
+    float: none;
+    width: 100%;
+  }
+  #cssmenu ul li a {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px 20px;
+  }
+  #cssmenu ul > li:after {
+    display: none;
+  }
+  #cssmenu ul li.has-sub > a:after,
+  #cssmenu ul li.has-sub > a:before,
+  #cssmenu ul li ul li.has-sub:after,
+  #cssmenu ul li ul li.has-sub:before {
+    display: none;
+  }
+  #cssmenu ul li ul,
+  #cssmenu ul li ul li ul,
+  #cssmenu ul li ul li:hover > ul,
+  #cssmenu.align-right ul li ul,
+  #cssmenu.align-right ul li ul li ul,
+  #cssmenu.align-right ul li ul li:hover > ul {
+    left: 0;
+    position: relative;
+    right: auto;
+  }
+  #cssmenu ul li ul li,
+  #cssmenu ul li:hover > ul > li {
+    max-height: 999px;
+    position: relative;
+    background:);
+  }
+  #cssmenu ul li ul li a {
+    padding: 8px 20px 8px 35px;
+    color: #000;
+  }
+  #cssmenu ul li ul ul li a {
+    padding: 8px 20px 8px 50px;
+  }
+  #cssmenu ul li ul li:hover > a {
+    color: #000;
+  }
+  #cssmenu #menu-button {
+    display: block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #000;
+    cursor: pointer;
+  }
+  #cssmenu #menu-button:after {
+    display: block;
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 22px;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    right: 20px;
+    top: 16px;
+  }
+  #cssmenu #menu-button:before {
+    display: block;
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 22px;
+    border-top: 2px solid #000;
+    right: 20px;
+    top: 26px;
+  }
+}
+@charset "utf-8";
+/* CSS Document */
+
+#slider-text{
+  padding-top: 40px;
+  display: block;
+}
+#slider-text .col-md-6{
+  overflow:hidden;
+}
+
+#slider-text h2 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: 3px;
+  margin: 30px auto;
+  padding-left: 40px;
+}
+#slider-text h2::after{
+  border-top: ;
+  content: "";
+  position: absolute;
+  bottom: 35px;
+  width: 100%;
+  }
+
+#itemslider h4{
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  margin: 10px auto 3px;
+}
+#itemslider h5{
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  margin: 3px auto 2px;
+}
+#itemslider h6{
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;;
+  font-size: 10px;
+  margin: 2px auto 5px;
+}
+.badge {
+  background:;
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  line-height: 31px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300px;
+  font-size: 14px;
+  border: 2px solid #FFF;
+  box-shadow:;
+  top: 5px;
+  right: 25%;
+}
+#slider-control img{
+  padding-top: 60%;
+  margin: 0 auto;
+}
+@media screen and (max-width: 992px){
+#slider-control img {
+  padding-top: 70px;
+  margin: 0 auto;
+}
+}
+
+.carousel-showmanymoveone .carousel-control {
+  width: 4%;
+  background-image: none;
+}
+.carousel-showmanymoveone .carousel-control.left {
+  margin-left: 5px;
+}
+.carousel-showmanymoveone .carousel-control.right {
+  margin-right: 5px;
+}
+.carousel-showmanymoveone .cloneditem-1,
+.carousel-showmanymoveone .cloneditem-2,
+.carousel-showmanymoveone .cloneditem-3,
+.carousel-showmanymoveone .cloneditem-4,
+.carousel-showmanymoveone .cloneditem-5 {
+  display: none;
+}
+@media all and (min-width: 768px) {
+  .carousel-showmanymoveone .carousel-inner > .active.left,
+  .carousel-showmanymoveone .carousel-inner > .prev {
+    left: -50%;
+  }
+  .carousel-showmanymoveone .carousel-inner > .active.right,
+  .carousel-showmanymoveone .carousel-inner > .next {
+    left: 50%;
+  }
+  .carousel-showmanymoveone .carousel-inner > .left,
+  .carousel-showmanymoveone .carousel-inner > .prev.right,
+  .carousel-showmanymoveone .carousel-inner > .active {
+    left: 0;
+  }
+  .carousel-showmanymoveone .carousel-inner .cloneditem-1 {
+    display: block;
+  }
+}
+@media all and (min-width: 768px) and (transform-3d), all and (min-width: 768px) and (-webkit-transform-3d) {
+  .carousel-showmanymoveone .carousel-inner > .item.active.right,
+  .carousel-showmanymoveone .carousel-inner > .item.next {
+    -webkit-transform: translate3d(50%, 0, 0);
+    transform: translate3d(50%, 0, 0);
+    left: 0;
+  }
+  .carousel-showmanymoveone .carousel-inner > .item.active.left,
+  .carousel-showmanymoveone .carousel-inner > .item.prev {
+    -webkit-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0);
+    left: 0;
+  }
+  .carousel-showmanymoveone .carousel-inner > .item.left,
+  .carousel-showmanymoveone .carousel-inner > .item.prev.right,
+  .carousel-showmanymoveone .carousel-inner > .item.active {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    left: 0;
+  }
+}
+@media all and (min-width: 992px) {
+  .carousel-showmanymoveone .carousel-inner > .active.left,
+  .carousel-showmanymoveone .carousel-inner > .prev {
+    left: -16.666%;
+  }
+  .carousel-showmanymoveone .carousel-inner > .active.right,
+  .carousel-showmanymoveone .carousel-inner > .next {
+    left: 16.666%;
+  }
+  .carousel-showmanymoveone .carousel-inner > .left,
+  .carousel-showmanymoveone .carousel-inner > .prev.right,
+  .carousel-showmanymoveone .carousel-inner > .active {
+    left: 0;
+  }
+  .carousel-showmanymoveone .carousel-inner .cloneditem-2,
+  .carousel-showmanymoveone .carousel-inner .cloneditem-3,
+  .carousel-showmanymoveone .carousel-inner .cloneditem-4,
+  .carousel-showmanymoveone .carousel-inner .cloneditem-5,
+  .carousel-showmanymoveone .carousel-inner .cloneditem-6  {
+    display: block;
+  }
+}
+@media all and (min-width: 992px) and (transform-3d), all and (min-width: 992px) and (-webkit-transform-3d) {
+  .carousel-showmanymoveone .carousel-inner > .item.active.right,
+  .carousel-showmanymoveone .carousel-inner > .item.next {
+    -webkit-transform: translate3d(16.666%, 0, 0);
+    transform: translate3d(16.666%, 0, 0);
+    left: 0;
+  }
+  .carousel-showmanymoveone .carousel-inner > .item.active.left,
+  .carousel-showmanymoveone .carousel-inner > .item.prev {
+    -webkit-transform: translate3d(-16.666%, 0, 0);
+    transform: translate3d(-16.666%, 0, 0);
+    left: 0;
+  }
+  .carousel-showmanymoveone .carousel-inner > .item.left,
+  .carousel-showmanymoveone .carousel-inner > .item.prev.right,
+  .carousel-showmanymoveone .carousel-inner > .item.active {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    left: 0;
+  }
+}
+a.animated-button.thar-three {
+	
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	position: relative;
+
+	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+0s;
+font-size:17px;
+color:#000
+}
+a.animated-button.thar-three:hover {
+	color: #000 !important;
+	background-color: transparent;
+	text-shadow: nthree;
+}
+a.animated-button.thar-three:hover:before {
+	left: 0%;
+	right: auto;
+	width: 100%;
+}
+a.animated-button.thar-three:before {
+	display: block;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	height: 100%;
+	width: 0px;
+	z-index: -1;
+	content: '';
+	color: #000 !important;
+	background: #FF9900;
+	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+0s;
+}
+
+</style>
+
+
+</head>
+<style>
+
+
+.glyphicon { margin-right:5px; }
+.thumbnail
+{
+    margin-bottom: 20px;
+    padding: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+}
+
+.item.list-group-item
+{
+    float: none;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+.item.list-group-item:nth-of-type(odd):hover,.item.list-group-item:hover
+{
+    background: #428bca;
+}
+
+.item.list-group-item .list-group-image
+{
+    margin-right: 10px;
+}
+.item.list-group-item .thumbnail
+{
+    margin-bottom: 0px;
+}
+.item.list-group-item .caption
+{
+    padding: 9px 9px 0px 9px;
+}
+.item.list-group-item:nth-of-type(odd)
+{
+    background: #eeeeee;
+}
+
+.item.list-group-item:before, .item.list-group-item:after
+{
+    display: table;
+    content: " ";
+}
+
+.item.list-group-item img
+{
+    float: left;
+}
+.item.list-group-item:after
+{
+    clear: both;
+}
+.list-group-item-text
+{
+    margin: 0 0 11px;
+}
+
+</style>
+
+<style>
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+body {
+    font-family: 'Lato', sans-serif;
+    color: #FFF;
+    background: #322f30;
+    -webkit-font-smoothing: antialiased;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+p > a:hover{
+    color: #d9d9d9;
+    text-decoration:  underline;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin:  1% 0 1% 0;
+}
+._12 {
+    font-size: 1.2em;
+}
+._14 {
+	font-size: 1.4em;
+	color: rgb(0,0,0);
+}
+ul {
+    padding:0;
+    list-style: none;
+}
+.footer-social-icons {
+    width: 350px;
+    display:block;
+    margin: 0 auto;
+}
+.social-icon {
+    color: #fff;
+}
+ul.social-icons {
+    margin-top: 10px;
+}
+.social-icons li {
+    vertical-align: top;
+    display: inline;
+    height: 100px;
+}
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+}
+.fa-facebook {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-facebook:hover {
+    background-color: #3d5b99;
+}
+.fa-twitter {
+    padding:10px 12px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-twitter:hover {
+    background-color: #00aced;
+}
+.fa-rss {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-rss:hover {
+    background-color: #eb8231;
+}
+.fa-youtube {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-youtube:hover {
+    background-color: #e64a41;
+}
+.fa-linkedin {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-linkedin:hover {
+    background-color: #0073a4;
+}
+.fa-google-plus {
+    padding:10px 9px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-google-plus:hover {
+    background-color: #e25714;
+}
+</style>
+
+
+<body style=" background-image:url(img/body/IMG_363852.jpg)">
+
+    <div class="logo" style="height:150px;width:300px; margin:auto; padding-top:50px">        <img src="img/logo/star-brand-1.png" alt="" width="271" height="136" class="img-responsive img-full"></div>
+    
+
+    <!-- Navigation -->
+ <div class="collapse navbar-collapse" id="cssmenu">
+            
+                <ul class="nav navbar-na" id="bs-example-navbar-collapse-1">
+                    <li>
+                        <a href="index.html" class="btn btn-sm animated-button thar-three">Home</a>
+                    </li>
+                    <li>
+                        <a href="blog.html"  class="btn btn-sm animated-button thar-three"
+                        
+                         >Gallery</a>
+                    </li>
+                    
+                     <li class="dropdown" >
+        <a class="btn btn-sm animated-button thar-three" data-toggle="dropdown" href="#">Products
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu" >
+        <a  href="Nutritious cereals.html" style="font-size:15px" class="btn btn-sm animated-button thar-three"> Nutritious cereals</a>
+         <a href="Pulses.html" style="font-size:15px"  class="btn btn-sm animated-button thar-three">Pulses</a>
+          <a href="Spices and Condiments.html" style="font-size:15px" class="btn btn-sm animated-button thar-three">Spices and Condiments</a>
+         <a href="Fruit Pulps.html" style="font-size:15px" class="btn btn-sm animated-button thar-three">Fruit Pulps</a>
+          <a href="Agro Products.html" style="font-size:15px" class="btn btn-sm animated-button thar-three">Agro Products</a>
+          <a href="Oils.html" style="font-size:15px" class="btn btn-sm animated-button thar-three">Oils</a>
+         
+          <a href="Wheat Flour.html" style="font-size:15px" class="btn btn-sm animated-button thar-three">Wheat Flour</a>
+          <a href="Rice.html" style="font-size:15px" class="btn btn-sm animated-button thar-three">Rice</a>
+           <a href="dry fruits.html" style="font-size:15px" class="btn btn-sm animated-button thar-three">dry fruits</a>
+         
+        </ul>
+      </li>      
+                    <li>
+                        <a href="about.html"  class="btn btn-sm animated-button thar-three">About</a>
+                    </li>
+                    <li>
+                        <a href="contact.html"  class="btn btn-sm animated-button thar-three">Contact</a>
+                    </li>
+                    
+                    
+    <div class="col-sm-3 col-md-3" style="padding-top:15px;">
+        <form class="navbar-form" role="search">
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search" name="q">
+            <div class="input-group-btn">
+                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+            </div>
+        </div>
+        </form>
+    </div>
+                </ul> 
+            </div>   <br><aside id="sticky-social">
+    <ul id="poo">
+        <li><a href="https://www.facebook.com/" class="entypo-facebook" target="_blank"><span>Facebook</span></a></li>
+        <li><a href="https://twitter.com/" class="entypo-twitter" target="_blank"><span>Twitter</span></a></li>
+        <li><a href="https://plus.google.com/" class="entypo-gplus" target="_blank"><span>Google+</span></a></li>
+        <li><a href="https://pk.linkedin.com/" class="entypo-linkedin" target="_blank"><span>LinkedIn</span></a></li>
+        <li><a href="https://www.instagram.com/?hl=en" class="entypo-instagrem" target="_blank"><span>Instagram</span></a></li>
+        <li><a href="http://www.stumbleupon.com/" class="entypo-stumbleupon" target="_blank"><span>StumbleUpon</span></a></li>
+        <li><a href="https://www.pinterest.com" class="entypo-pinterest" target="_blank"><span>Pinterest</span></a></li>
+        <li><a href="https://www.flickr.com/" class="entypo-flickr" target="_blank"><span>Flickr</span></a></li>
+        <li><a href="https://www.flickr.com/" class="entypo-tumblr" target="_blank"><span>Tumblr</span></a></li>
+    </ul>
+</aside>
+
+<div class="container">
+                        
+        <div class="item  col-xs-4 col-lg-4">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="img/products/pulses/adzuki beans.JPG" alt="" />
+                <div class="caption">
+                  <h4 class="group inner list-group-item-heading">
+                        adzuki beans</h4>
+                    <p class="group inner list-group-item-text">
+                        Adzuki beans are small, red beans that originated in China. These legumes (also called aduki or azuki beans) are most often enjoyed boiled with sugar and including ice cream.</p>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                250 PKR</p>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" href="order form.html">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="item  col-xs-4 col-lg-4">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="img/products/pulses/Black Urad.JPG" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        Black Urad</h4>
+                    <p class="group inner list-group-item-text">
+                        Vigna mungo, black gram, urad bean, mungo bean or black matpe bean is a bean grown in the Indian subcontinent. ... The product sold as black lentil is usually the whole urad bean.</p>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                150 PKR</p>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" href="order form.html">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item  col-xs-4 col-lg-4">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="img/products/pulses/cannellini beans.JPG" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        cannellini beans</h4>
+                    <p class="group inner list-group-item-text">Cannellini bean Slightly kidney-shaped with squarish ends, cannellini beans are from Italy and are creamy white in colour. When cooked, they have a fluffy texture and a slightly nutty.</p>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                180 PKR</p>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" href="order form.html">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item  col-xs-4 col-lg-4">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="img/products/pulses/chick peas.JPG" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        chick peas</h4>
+                    <p class="group inner list-group-item-text">
+The chickpea or chick pea (Cicer arietinum) is a legume of the family Fabaceae, subfamily Faboideae. Its different types are variously known as gram, or Bengal gram, garbanzo or garbanzo bean, Egyptian pea.</p>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                120 PKR</p>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" href="order form.html">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item  col-xs-4 col-lg-4">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="img/products/pulses/kidney beans.JPG" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        kidney beans</h4>
+                    <p class="group inner list-group-item-text">
+The kidney bean is a variety of the common bean (Phaseolus vulgaris). It is named for its visual resemblance in shape and color to a kidney. Red kidney beans should not be confused with other red beans, such as adzuki beans</p>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                140 PKR</p>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" href="order form.html">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item  col-xs-4 col-lg-4">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="img/products/pulses/mung beans.JPG" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        mung beans</h4>
+                    <p class="group inner list-group-item-text">
+                        The mung bean , alternatively known as the moong bean, green gram, or mung Sanskrit  mudga, is a plant species in the legume family. . It is used as an ingredient in both savory and sweet dishes.</p>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                120 PKR</p>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" href="order form.html">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+  <div class="container">
+                        
+        <div class="item  col-xs-4 col-lg-4">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="img/products/pulses/pinto beans.JPG" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        pinto beans</h4>
+                    <p class="group inner list-group-item-text">
+                        The pinto bean is a variety of the common bean. It is the most popular bean in the United States and northwestern Mexico, and is most often eaten whole in broth .</p>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                170 PKR</p>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" href="order form.html">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="item  col-xs-4 col-lg-4">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="img/products/pulses/red lentil.JPG" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        red lentil</h4>
+                    <p class="group inner list-group-item-text">
+                        The lentil (Lens culinaris) is an edible pulse. It is a bushy annual plant of the legume family, known for its lens-shaped seeds. It is about 40 cm (16 in) tall.</p>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                190 PKR</p>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" href="order form.html">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item  col-xs-4 col-lg-4">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="img/products/pulses/soybeans.JPG" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        soybeans</h4>
+                    <p class="group inner list-group-item-text">
+                        Glycine max, commonly known as soybean in North America or soya bean, is a species of legume native to East Asia, widely grown for its edible bean which has numerous uses. ... .</p>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                130 PKR</p>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" href="order form.html">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><div class="item  col-xs-4 col-lg-4">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="img/products/pulses/split green peas.JPG" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        split green peas</h4>
+                    <p class="group inner list-group-item-text">
+                         The peas are round when harvested, with an outer skin. The peas are dried and the dull-coloured outer skin of the pea removed, then split in half by hand or by machine at the natural split in the seed's cotyledon.	</p>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                140 PKR</p>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" href="order form.html">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item  col-xs-4 col-lg-4">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="img/products/pulses/split mix peas.JPG" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        split mix peas</h4>
+                    <p class="group inner list-group-item-text">
+                        
+                         The peas are round when harvested, with an outer skin. The peas are dried and the dull-coloured outer skin of the pea removed, then split in half by hand or by machine at the natural split in the seed's cotyledon.</p>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                170 PKR</p>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" href="order form.html">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item  col-xs-4 col-lg-4">
+            <div class="thumbnail">
+                <img class="group list-group-image" src="img/products/pulses/split yellow peas.JPG" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        split yellow peas</h4>
+                    <p class="group inner list-group-item-text">
+                        The peas are round when harvested, with an outer skin. ... The Indian toor dal (split pigeon peas) and chana dal (split yellow gram, desi chickpeas) are commonly also referred to as peas, although from other</p>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                195 PKR</p>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                            <a class="btn btn-success" href="order form.html">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+  </div>
+    
+</div>
+    
+    <!-- /.container -->
+ <!-- Footer -->  
+
+ <footer style="max-height:250px; min-width:1200px">
+<div class="container"  >
+<div class="row">
+<div class="col-md-6 col-sm-12 " >
+<div class="footer-about">
+</div>
+<div class="copyright hidden-sm hidden-xs">
+<h2 class="_14">Follow us on</h2>
+    <ul class="social-icons">
+        <li><a href="" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+        <li><a href="" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+        <li><a href="" class="social-icon"> <i class="fa fa-rss"></i></a></li>
+        <li><a href="" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+        <li><a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+        <li><a href="" class="social-icon"> <i class="fa fa-google-plus"></i></a></li>
+    </ul>
+   
+ <input type="text" class="form-control" placeholder="Search for..." style="width:250px">
+                      
+                        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-envelope"></button>
+                        
+                       <h1 style="font-size:15px ; color:rgb(0,0,0)">Copyrights &copy; 2018 <a href="index.html" title="" style="color:rgb(0,0,0)">Star Brand</a>. All Right Reserved.</h1>
+<h5 style="color:rgb(0,0,0)">Developed By : <a href="" title="" style="color:rgb(0,0,0)">tayyab malik</a></h5>
+
+
+</div>
+</div>
+<div class="col-md-6 col-sm-12">
+<div class="col-md-6 col-sm-6">
+<div class="contact-info">
+<h2 class="footer-title" style="padding-right: 400px; color: rgb(0,0,0);">Contact Info</h2>
+<div class="single">
+	<i class="fa fa-map-marker" style="color:rgb(0,0,0)"></i>
+	<p>APTECH,<br> 
+Karachi,  Garden Center, Pakistan</p>
+</div>
+<div class="single">
+	<i class="fa fa-phone" style="color:rgb(0,0,0)"> 03131090652</i>
+	
+</div>
+<div class="single"> </div>
+
+<div class="social-icon"></div>
+</div>
+</div>
+<div class="col-md-6 col-sm-6 left-border">
+<div class="navigation">
+<h2 class="footer-title">Navigation</h2>
+<ul class="" style="border-bottom-color:rgb(0,0,0); font-weight: bold;">
+	<li style="color:rgb(0,0,0)"><a href="index.html" title="" style="color:rgb(0,0,0)">Home</a></li>
+	<li><a href="about.html" title="" style="color:rgb(0,0,0)">About Us</a></li>
+	<li><a href="blog.html" title="" style="color:rgb(0,0,0)">Gallery</a></li>
+	<li><a href="index.html" title="" style="color:rgb(0,0,0)">Product</a></li>
+	<li><a href="contact.html" title="" style="color:rgb(0,0,0)">Contact Us</a></li>
+</ul>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</footer>
+<br>
+<br>
+ 
+  
+   <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    })
+	$('body').append('<div id="backToTop" class="btn btn-lg"><span class="glyphicon glyphicon-chevron-up"></span></div>');
+    $(window).scroll(function () {
+		if ($(this).scrollTop() <= 200) {
+			$('#backToTop').fadeOut();
+		} else {
+			$('#backToTop').fadeIn();
+		}
+	}); 
+$('#backToTop').click(function(){
+    $("html, body").animate({ scrollTop: 0 }, 600);
+    return false;
+});
+    </script>
+
+</body>
+
+</html>
